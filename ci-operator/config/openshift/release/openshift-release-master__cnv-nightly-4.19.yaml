@@ -36,11 +36,9 @@ releases:
         stream: 4-dev-preview
         upper: 4.20.0-0
   multi-latest:
-    candidate:
+    release:
       architecture: multi
-      product: ocp
-      relative: 1
-      stream: nightly
+      channel: stable
       version: "4.19"
 resources:
   '*':
