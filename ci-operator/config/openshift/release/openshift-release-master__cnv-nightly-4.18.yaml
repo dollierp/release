@@ -52,6 +52,7 @@ tests:
     dependencies:
       OPENSHIFT_INSTALL_RELEASE_IMAGE_OVERRIDE: release:multi-latest
     env:
+      ADD_ZONES: false  # reduce InsufficientInstanceCapacity errors
       COMPUTE_NODE_REPLICAS: "2"
       COMPUTE_NODE_TYPE: c6g.metal
       KUBEVIRT_RELEASE: v0.55.0
